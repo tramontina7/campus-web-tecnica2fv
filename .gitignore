@@ -1,0 +1,146 @@
+# ============ SECRETOS Y CONFIGURACIONES ============
+# NUNCA subir archivos con contraseñas o claves
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+secrets.json
+credentials.json
+config.json
+settings.json
+*.key
+*.pem
+*.crt
+*.pfx
+id_rsa
+id_dsa
+*.priv
+
+# ============ CARPETAS SENSIBLES ============
+secrets/
+private/
+credentials/
+real_config/
+certificates/
+ssl/
+
+# ============ BASE DE DATOS ============
+# NUNCA subir bases de datos reales
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+dump.sql
+backup.sql
+database/
+data/
+
+# ============ ARCHIVOS DEL SISTEMA ============
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============ EDITORES E IDEs ============
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Otros editores
+*.swp
+*.swo
+*~
+
+# ============ DEPENDENCIAS ============
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pyvenv.cfg
+venv/
+env/
+
+# PHP
+vendor/
+composer.lock
+
+# ============ ARCHIVOS DE CONSTRUCCIÓN ============
+dist/
+build/
+out/
+*.exe
+*.out
+*.app
+
+# ============ LOGS ============
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# ============ TEMPORALES ============
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ============ OFFICE TEMPORALES ============
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+~$*.pdf
+
+# ============ MULTIMEDIA PESADO ============
+# (Mejor usar enlaces externos)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.mp3
+*.wav
+
+# ============ PROYECTO ESPECÍFICO ============
+# Para tu proyecto de campus web:
+uploads/           # Si suben archivos usuarios
+backups/           # Copias de seguridad
+media/private/     # Contenido privado
